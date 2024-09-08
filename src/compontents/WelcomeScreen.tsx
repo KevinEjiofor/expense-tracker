@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, Animated, Easing } from 'react-native';
-import * as Font from 'expo-font'; // If using Expo
+import * as Font from 'expo-font'; 
 
 export const WelcomeScreen: React.FC = () => {
   const [fontsLoaded, setFontsLoaded] = useState(false);
