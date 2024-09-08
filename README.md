@@ -6,13 +6,13 @@
 
 - Add expenses with description, amount, and category.
 - Filter expenses by category.
-- View total amount spent.
+- View the total amount spent.
 - Persistent data storage using AsyncStorage.
-- Animated welcome screen with custom font.
+- Animated welcome screen with a custom font.
 
 ## Screenshots
 
-- **Welcome Screen**: Animated welcome with custom font.
+- **Welcome Screen**: Animated welcome with a custom font.
 - **Expense List**: View and manage your expenses.
 - **Total Amount**: Display the total amount spent.
 
@@ -21,6 +21,13 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/expensemate.git
+   git clone https://github.com/KevinEjiofor/expense-tracker.git
    cd expensemate
+   
+2. **Install dependencies:**
+   npm install or yarn install
+
+3.**Start the project:**
+   npm start
+
 
