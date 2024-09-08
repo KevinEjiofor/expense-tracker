@@ -9,7 +9,7 @@ export const TotalAmount: React.FC<TotalAmountProps> = ({ expenses }) => {
   const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
   return (
     <View style={styles.container}>
-      <Text style={styles.totalText}>Total Spent: ${total.toFixed(2)}</Text>
+      <Text style={styles.totalText}>Total Spent: ₦ {total.toFixed(2)}</Text>
     </View>
   );
 };

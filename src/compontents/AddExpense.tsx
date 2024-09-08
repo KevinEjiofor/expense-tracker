@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
+import { View, TextInput, Button, StyleSheet, Text, Keyboard } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 
 type Expense = {
@@ -27,11 +27,13 @@ export const AddExpense: React.FC<AddExpenseProps> = ({ onAddExpense }) => {
       onAddExpense(newExpense);
       setDescription('');
       setAmount('');
+      Keyboard.dismiss(); 
     }
   };
 
   return (
     <View style={styles.container}>
+      
       <Text style={styles.label}>Description</Text>
       <TextInput
         style={styles.input}
@@ -61,10 +63,12 @@ export const AddExpense: React.FC<AddExpenseProps> = ({ onAddExpense }) => {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 50,
     padding: 20,
   },
   input: {
     height: 40,
+    borderRadius: 30,
     borderColor: 'gray',
     borderWidth: 1,
     marginBottom: 20,
@@ -73,5 +77,6 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     fontWeight: 'bold',
+    paddingBottom: 10,
   },
 });

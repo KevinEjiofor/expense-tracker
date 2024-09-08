@@ -1,4 +1,3 @@
-// src/components/ExpenseList.tsx
 import React from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 
@@ -20,7 +19,7 @@ export const ExpenseList: React.FC<ExpenseListProps> = ({ expenses }) => {
       renderItem={({ item }) => (
         <View style={styles.expenseItem}>
           <Text style={styles.description}>{item.description}</Text>
-          <Text style={styles.amount}>${item.amount.toFixed(2)}</Text>
+          <Text style={styles.amount}> ₦ {item.amount.toFixed(2)}</Text>
           <Text style={styles.category}>{item.category}</Text>
         </View>
       )}
